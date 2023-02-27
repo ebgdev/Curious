@@ -1,15 +1,17 @@
-// linear congruential generator
-
-
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 #define A 1103515245
 #define C 12345
 #define M 2147483648
 
 int main() {
+    // Get the current time as a seed value
+    time_t seed = time(NULL) ;
+    
     // Set the initial value for the LCG algorithm
-    long int prev = 1;
+    long int prev = (long int)seed;
     
     // Generate 10 random numbers between 1 and 100 using the LCG algorithm
     for (int i = 0; i < 10; i++) {

@@ -1,0 +1,3 @@
+([('password_generator',
+   '/Users/ma/Desktop/Projects/Curious/PasswordGenerator/dist/password_generator',
+   'EXECUTABLE')],)
